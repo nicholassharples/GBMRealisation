@@ -33,5 +33,5 @@ gg <- ggplot(data = df) +
 
 anim <- gg + transition_reveal(time)
 
-animate(anim, renderer = ffmpeg_renderer(), height = 725, width = 1024, end_pause = 30)
-
+animate(anim, renderer = ffmpeg_renderer(), height = 726, width = 1024, end_pause = 30)
+anim_save("GBMAnimate.mp4")
